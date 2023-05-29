@@ -24,7 +24,7 @@ def get_recommend(keyword,count,address,budget):
     "budget" : budget, 
   }
   response = requests.get(url, params=params)
-  # JSONのエンコードしてエラー処理
+  # JSONにエンコードしてエラー処理
   data = response.json()
 
   if "error" in data:
